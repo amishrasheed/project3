@@ -1,0 +1,145 @@
+Atlas atlas-5fl832-shard-0 [primary] books_database> db.products.find()
+[
+  {
+    _id: ObjectId("656288dcef72004a3656a483"),
+    name: 'The Great Gatsby',
+    price: 13.99,
+    description: 'A novel by F. Scott Fitzgerald that follows a cast of characters living in the fictional towns of West Egg and East Egg on prosperous Long Island in the summer of 1922.',
+    imageUrl: '/images/the-great-gatsby.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a484"),
+    name: '1984',
+    price: 9.99,
+    description: 'A dystopian social science fiction novel and cautionary tale by the English writer George Orwell.',
+    imageUrl: '/images/1984.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a485"),
+    name: 'To Kill a Mockingbird',
+    price: 12.99,
+    description: 'A novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the USA. The novel is renowned for its warmth and humor, despite dealing with serious issues of rape and racial inequality.',
+    imageUrl: '/images/to-kill-a-mockingbird.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a486"),
+    name: 'Pride and Prejudice',
+    price: 7.99,
+    description: 'A romantic novel of manners written by Jane Austen in 1813. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book, who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.',
+    imageUrl: '/images/pride-and-prejudice.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a489"),
+    name: 'The Hobbit',
+    price: 14.99,
+    description: "A children's fantasy novel by English author J.R.R. Tolkien. It was published in 1937 and is set in a time 'Between the Dawn of Færie and the Dominion of Men'. The novel follows the quest of home-loving Bilbo Baggins to win a share of the treasure guarded by the dragon, Smaug.",
+    imageUrl: '/images/the-hobbit.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a487"),
+    name: 'Crime and Punishment',
+    price: 18.99,
+    description: "A novel by the Russian author Fyodor Dostoevsky. It was first published in the literary journal The Russian Messenger in twelve monthly installments during 1866. It is the second of Dostoevsky's full-length novels following his return from ten years of exile in Siberia.",
+    imageUrl: '/images/crime-and-punishment.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a488"),
+    name: 'Jane Eyre',
+    price: 14.99,
+    description: "A novel by English writer Charlotte Brontë, published under the pen name 'Currer Bell', on 16 October 1847, by Smith, Elder & Co. of London. The novel is a first-person narrative from the perspective of the title character.",
+    imageUrl: '/images/jane-eyre.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a48a"),
+    name: 'Wuthering Heights',
+    price: 11.99,
+    description: "Emily Brontë's only novel, published in 1847 under the pseudonym 'Ellis Bell'. It concerns two families of the landed gentry living on the West Yorkshire moors, the Earnshaws and the Lintons, and their turbulent relationships with Earnshaw's adopted son, Heathcliff.",
+    imageUrl: '/images/wuthering-heights.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a48d"),
+    name: 'Frankenstein',
+    price: 9.99,
+    description: 'A novel written by English author Mary Shelley that tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment.',
+    imageUrl: '/images/frankenstein.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a48b"),
+    name: 'Great Expectations',
+    price: 13.99,
+    description: 'A coming-of-age novel by Charles Dickens, first published in serialized form in 1860-61. It is the story of Pip, an orphan who sees his life change after an encounter with the escaped convict, Magwitch.',
+    imageUrl: '/images/great-expectations.jpg'
+  },
+  {
+    _id: ObjectId("656288dcef72004a3656a48c"),
+    name: 'Anna Karenina',
+    price: 16.99,
+    description: 'A novel by the Russian author Leo Tolstoy, first published in book form in 1878. Many writers consider Anna Karenina the greatest work of literature ever, and Tolstoy himself called it his first true novel.',
+    imageUrl: '/images/anna-karenina.jpg'
+  }
+]
+Atlas atlas-5fl832-shard-0 [primary] books_database> db.orders.find()
+[
+  {
+    _id: ObjectId("656416c4a37afa99b139cfec"),
+    items: [
+      {
+        itemId: ObjectId("656288dcef72004a3656a483"),
+        quantity: 1,
+        _id: ObjectId("656416c4a37afa99b139cfed")
+      },
+      {
+        itemId: ObjectId("656288dcef72004a3656a484"),
+        quantity: 1,
+        _id: ObjectId("656416c4a37afa99b139cfee")
+      }
+    ],
+    dateOrdered: ISODate("2023-11-27T04:10:44.478Z"),
+    __v: 0
+  },
+  {
+    _id: ObjectId("656416e6a37afa99b139cff9"),
+    items: [
+      {
+        itemId: ObjectId("656288dcef72004a3656a484"),
+        quantity: 1,
+        _id: ObjectId("656416e6a37afa99b139cffa")
+      },
+      {
+        itemId: ObjectId("656288dcef72004a3656a488"),
+        quantity: 5,
+        _id: ObjectId("656416e6a37afa99b139cffb")
+      },
+      {
+        itemId: ObjectId("656288dcef72004a3656a48d"),
+        quantity: 1,
+        _id: ObjectId("656416e6a37afa99b139cffc")
+      },
+      {
+        itemId: ObjectId("656288dcef72004a3656a48a"),
+        quantity: 4,
+        _id: ObjectId("656416e6a37afa99b139cffd")
+      }
+    ],
+    dateOrdered: ISODate("2023-11-27T04:11:18.186Z"),
+    __v: 0
+  },
+  {
+    _id: ObjectId("65641b87aef458cf579fbf6b"),
+    items: [
+      {
+        itemId: ObjectId("656288dcef72004a3656a488"),
+        quantity: 1,
+        _id: ObjectId("65641b87aef458cf579fbf6c")
+      },
+      {
+        itemId: ObjectId("656288dcef72004a3656a48a"),
+        quantity: 5,
+        _id: ObjectId("65641b87aef458cf579fbf6d")
+      }
+    ],
+    dateOrdered: ISODate("2023-11-27T04:31:03.669Z"),
+    __v: 0
+  }
+]
+Atlas atlas-5fl832-shard-0 [primary] books_database> 
